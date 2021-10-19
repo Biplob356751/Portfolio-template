@@ -23,3 +23,41 @@
 .project_77{
     height: 200px
 }
+/* Responsive part start here */
+@media (max-width: 992px){
+    .project_content{
+        height: 300px;
+    }
+    .project_77{
+        height: 200px
+    }
+}
+@media (max-width: 768px){
+    .project_img{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project_content{
+        height: 330px;
+    }
+    .project_77{
+        height: 200px
+    }
+    .project_section{
+        margin-bottom: 100px;
+    }
+}
+@media (max-width: 500px){
+    .project_img{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1%;
+    }
+    .project_content{
+        height: 430px;
+    }
+    .project_77{
+        height: 200px
+    }
+    .project_section{
+        padding-bottom: 180px;
+    }
+}

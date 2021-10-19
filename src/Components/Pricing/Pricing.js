@@ -49,7 +49,7 @@ const Pricing = () => {
                                 <i className="fa fa-check"></i><span>Content Upload</span>
                             </div>
                             <div className="price_table_price">
-                                <i className="fa fa-check"></i><span>5 Revision</span>
+                                <i className="fa fa-check"></i><span>Unlimited Revision</span>
                             </div>
                             <div className="order_btn">
                                 <button>Ordered Now</button>

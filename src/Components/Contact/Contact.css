@@ -1,0 +1,140 @@
+.contact_section{
+    margin-top: 100px;
+    padding-bottom: 100px;
+}
+.contact{
+    display: grid;
+    grid-template-columns: 40% 58%;
+    grid-gap: 2%;
+}
+.contact_info{
+    border-right: 3px solid #2ECC71;
+}
+.contact_info h2{
+    font-size: 20px;
+    font-weight: 400;
+    color: #17202A;
+    margin-bottom: 50px;
+    position: relative;
+}
+.contact_info h2::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 3px;
+    background-color: #2ECC71;
+}
+.contact_info p{
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666;
+    margin-top: 20px;
+}
+.contact_info p i{
+    margin-right: 5px;
+    color: #2ECC71;
+}
+.contact_input input{
+    display: block;
+    width: 60%;
+    padding: 10px;
+    color: #17202A;
+    font-size: 14px;
+    border-radius: 3px;
+    border: 1px solid #2ECC71;
+    margin: auto;
+}
+.contact_input textarea{
+    width: 60%;
+    padding: 10px;
+    color: #17202A;
+    font-size: 14px;
+    height: 150px;
+    border: 1px solid #2ECC71;
+    border-radius: 3px;
+    margin: 10px auto;
+    display: block;
+}
+.contact_input input[type="submit"] {
+    width: 20%;
+    background-color: #2ECC71;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Responsive part start here  */
+
+@media (max-width: 992px){
+    .contact{
+        grid-template-columns: 48% 48%;
+    }
+    .contact_input input{
+        width: 90%;
+    }
+    .contact_input textarea{
+        width: 90%;
+    }
+    .contact_input input[type="submit"] {
+        width: 30%;
+    }
+}
+@media (max-width: 830px){
+    .contact_info p{
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px){
+    .contact{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .contact_info{
+        border-right: none;
+        text-align: center;
+    }
+    .contact_info h2::after{
+       top: 120%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+    }
+    .contact_input input{
+        width: 60%;
+    }
+    .contact_input textarea{
+        width: 60%;
+    }
+    .contact_input input[type="submit"] {
+        width: 30%;
+    }
+    .contact_input{
+        margin-top: 40px;
+    }
+}
+@media (max-width: 650px){
+    .contact_input input{
+        width: 80%;
+    }
+    .contact_input textarea{
+        width: 80%;
+    }
+}
+@media (max-width: 475px){
+    .contact_input input{
+        width: 100%;
+    }
+    .contact_input textarea{
+        width: 100%;
+    }
+    .contact_input input[type="submit"] {
+        width: 50%;
+    }
+}
+@media (max-width: 375px){
+   .contact_info h2{
+       font-size: 18px;
+   } 
+   .contact_info p{
+       font-size: 12px;
+   }
+}

@@ -5,6 +5,7 @@ import Service from '../Service/Service';
 import './Home.css'
 import Pricing from './../Pricing/Pricing';
 import Contact from './../Contact/Contact';
+import Img from '../Image/bg.png'
 
 const Home = () => {
     return (
@@ -22,7 +23,7 @@ const Home = () => {
                             <a href="#"><i className="fab fa-github"></i></a>
                         </div>
                         <div className="hero_content_img">
-                            <img src="https://i.pinimg.com/564x/53/8f/db/538fdb6e67cd6d62509de47798944644.jpg" alt="image" />
+                            <img src={Img} alt="image" />
                         </div>
                     </div>
                 </div>

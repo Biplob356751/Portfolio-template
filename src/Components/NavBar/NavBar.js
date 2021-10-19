@@ -3,6 +3,34 @@ import { Link } from 'react-router-dom';
 import './NavBar.css'
 
 const NavBar = () => {
+
+    // Drop down menu start
+    
+    const handleBarIcon = () => {
+        var menuItem = document.querySelector('.menu_item');
+        var timeIcon = document.querySelector('#times_icon');
+        var barIcon = document.querySelector('#bar_icon');
+        menuItem.style.opacity = '1';
+        menuItem.style.visibility = 'visible';
+        menuItem.style.transform = 'scaleY(1)';
+        timeIcon.style.opacity = '1';
+        timeIcon.style.visibility = 'visible';
+        barIcon.style.opacity = '0';
+        barIcon.style.visibility = 'hidden';
+    };
+    const handleTimeIcon = () => {
+        var menuItem = document.querySelector('.menu_item');
+        var timeIcon = document.querySelector('#times_icon');
+        var barIcon = document.querySelector('#bar_icon');
+        menuItem.style.opacity = '0';
+        menuItem.style.visibility = 'hidden';
+        menuItem.style.transform = 'scaleY(0)';
+        timeIcon.style.opacity = '0';
+        timeIcon.style.visibility = 'hidden';
+        barIcon.style.opacity = '1';
+        barIcon.style.visibility = 'visible';
+    }
+   // Drop down menu end
     return (
         <div className="nav_bar">
             <div className="container">
@@ -22,8 +50,8 @@ const NavBar = () => {
                         </nav>
                     </div>
                     <div className="bar_icon">
-                        <i className="fa fa-bars"></i>
-                        <i id="times_icon" className="fa fa-times"></i>
+                        <i onClick={handleBarIcon} id="bar_icon" className="fa fa-bars"></i>
+                        <i onClick={handleTimeIcon} id="times_icon" className="fa fa-times"></i>
                     </div>
                 </div>
             </div>
