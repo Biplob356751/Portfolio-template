@@ -2,32 +2,27 @@
     margin-top: 100px;
     padding-bottom: 100px;
 }
-.tab_section .tab{
-    cursor: pointer;
-    margin-right: 40px;
-    display: inline-block;
+.tabs{
+   display: grid;
+   grid-template-columns: 20% 15% 20%;
+   margin-top: 20px;
+   margin-bottom: 30px;
+
+}
+.tab{
     font-size: 16px;
     font-weight: 500;
-}
-.tabs{
-    display: flex;
-}
-.tab_content{
-    padding: 30px 0;
+    cursor: pointer;
 }
 .content{
     display: none;
+    
 }
 .active_content{
     display: block !important;
 }
 .active_tab{
-    border: none !important;
-    color: #2ECC71;
-}
-.tab_content h5{
-    color: #444;
-    font-size: 16px;
+    color: #2ECC71
 }
 .about_content_item{
     display: grid;
@@ -71,9 +66,6 @@
     color: #777;
     line-height: 25px;
     font-weight: 500;
-}
-.profile_tab{
-    margin-top: 20px;
 }
 .tab_content h4{
     font-size: 15px;
@@ -136,6 +128,9 @@
     }
 }
 @media (max-width: 992px){
+    .tabs{
+        grid-template-columns: 25% 20% 25%;
+     }
     .profile_info h2::after{
         left: 35%;
     }
@@ -148,6 +143,9 @@
     }
     .profile_image{
         height: 320px;
+    }
+    .skill{
+        width: 80%;
     }
     
 }
@@ -176,6 +174,9 @@
     .profile_image{
         height: 300px;
     }
+    .tabs{
+        grid-template-columns: 30% 20% 25%;
+     }
 }
 @media (max-width: 768px){
     .about_content_item{
@@ -214,15 +215,19 @@
         font-size: 15px;
     }
     .tabs{
-        justify-content: space-evenly;
-        align-items: center !important;
-        width: 100%;
+        width: 50%;
+        margin: 20px auto;
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+    }
+    .tab_content{
+        margin-top: 30px;
     }
     .content{
         text-align: center;
     }
     .skill{
-        width: 65%;
+        width: 75%;
         margin: 20px auto;
     }
     .about_us{
@@ -294,22 +299,29 @@
     .contact_link p{
        font-size: 10px;
     }
+    .tabs{
+        width: 70%;
+    }
 }
 @media (max-width: 500px){
     .profile_info h2::before{
         width: 80px;
+        left: 8%;
     }
     .profile_info h2::after{
-        left: 80%;
+        left: 73%;
         width: 80px;
+    }
+    .profile_info h2{
+        font-size: 25px;
     }
 }
 @media (max-width: 450px){
     .profile_info h2::before{
-        left: -2%;
+        left: 3%;
     }
     .profile_info h2::after{
-        left: 82%;
+        left: 75%;
     }
     .profile_image{
         width: 100%;
@@ -321,10 +333,13 @@
 }
 @media (max-width: 425px){
     .profile_info h2::before{
-        left: -3%;
+        left: 5%;
     }
     .profile_info h2::after{
-        left: 81%;
+        left: 72%;
+    }
+    .profile_info h2{
+        font-size: 20px;
     }
     .tab_content p{
         font-size: 14px;
@@ -363,5 +378,8 @@
     .profile_image img{
         top: 8px;
         left: 8px;
+    }
+    .tabs{
+        width: 100%;
     }
 }

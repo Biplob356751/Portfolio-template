@@ -14,11 +14,15 @@
     overflow-y: scroll;
     box-shadow: 0px 0px 3px 1px #e0e0e0;
 }
+.project_content:hover img{
+    transform: translateY(-85%);
+}
 .project_content::-webkit-scrollbar{
     display: none;
 }
 .project_content img{
     width: 100%;
+    transition: 10s;
 }
 .project_77{
     height: 200px
