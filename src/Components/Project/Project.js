@@ -7,6 +7,8 @@ import Image4 from '../Image/SEO Melbourne.png'
 import Image5 from '../Image/JossGift Shop.png'
 import Image6 from '../Image/React App.png'
 import Image7 from '../Image/project5.png'
+import Image8 from '../Image/HelgaInu __ Insp.png'
+import Image9 from '../Image/JossGiftShop.png'
 
 
 const Project = () => {
@@ -34,6 +36,12 @@ const Project = () => {
                     </div>
                     <div className="project_content project_77">
                         <a href="https://jolly-shaw-b4ee74.netlify.app/" target="_blank"><img src={Image7} alt="" /></a>
+                    </div>
+                    <div className="project_content project_77">
+                        <a href="https://vigilant-morse-fe8a02.netlify.app/" target="_blank"><img src={Image8} alt="" /></a>
+                    </div>
+                    <div className="project_content project_77">
+                        <a href="https://zen-pasteur-274287.netlify.app/" target="_blank"><img src={Image9} alt="" /></a>
                     </div>
                 </div>
             </div>
