@@ -30,6 +30,7 @@ const NavBar = () => {
         barIcon.style.opacity = '1';
         barIcon.style.visibility = 'visible';
     }
+
    // Drop down menu end
     return (
         <div className="nav_bar">

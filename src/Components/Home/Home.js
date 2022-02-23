@@ -5,7 +5,7 @@ import Service from '../Service/Service';
 import './Home.css'
 import Pricing from './../Pricing/Pricing';
 import Contact from './../Contact/Contact';
-import Img from '../Image/bg.png'
+import Img from '../Image/Background.png'
 
 const Home = () => {
     return (
@@ -16,7 +16,7 @@ const Home = () => {
                         <div className="hero_content">
                             <h5>Hey!</h5>
                             <h1>I Am Biplob Hossain</h1>
-                            <p>Proffessional Frontend Devlover....</p>
+                            <p>Proffessional Frontend Devloper....</p>
                             <a href="https://www.facebook.com/md.biplob.31508076" target="_blank"><i className="fab fa-facebook"></i></a>
                             <a href="#" ><i className="fab fa-google-plus"></i></a>
                             <a href="#"><i className="fab fa-whatsapp"></i></a>
